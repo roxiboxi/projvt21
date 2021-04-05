@@ -5,11 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/contactme.css">
+    <link rel="stylesheet" href="homepage.css">
+
 </head>
+
 <body>
- 
+    <div id="header-wrapper">
+        <div id="header" class="container">
+            <div id="logo">
+                <h1><a href="#">Roxana Niculescu</a></h1>
+            <div id="menu">
+                <ul>
+                    <li class="current_page_item">
+                        <a href="" row1="1" title="">Homepage</a></li>
+                    <li><a href="" row2="2" title="">About me</a></li>
+                    <li><a href="" row3="3" title="">My work</a></li>
+                    <li><a href="" row4="4" title="">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+        <img src="spacejoy-8e679XbGGy4-unsplash.jpg" alt="">
+        <img src="naomi-hebert-MP0bgaS_d1c-unsplash.jpg" alt="">
+        <img src="jarek-ceborski-jn7uVeCdf6U-unsplash.jpg" alt="">
+        <img src="toa-heftiba-FV3GConVSss-unsplash.jpg" alt="">
+        <img src="andriyko-podilnyk-bdmdX_XMcV4-unsplash.jpg" alt="">
     
+    </div>
     
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="spacejoy-8e679XbGGy4-unsplash.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="naomi-hebert-MP0bgaS_d1c-unsplash.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="jarek-ceborski-jn7uVeCdf6U-unsplash.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="toa-heftiba-FV3GConVSss-unsplash.jpg" style="width:100%">
+    <div class="text">Caption four</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="andriyko-podilnyk-bdmdX_XMcV4-unsplash.jpg" style="width:100%">
+    <div class="text">Caption five</div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 </body>
-</html>
+</html> 
+
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="Sweden">Sweden</option>
+        <option value="Canada">Canada</option>
+        <option value="usa">USA</option>
+        <option value="usa">Bulgaria</option>
+        <option value="usa">Poland</option>
+        <option value="usa">Romania</option>
+        <option value="usa">Serbia</option>
+        <option value="usa">Bosnia</option>
+        <option value="usa">Brazil</option>
+        <option value="usa">Spain</option>
+        <option value="usa">Italy</option>
+        <option value="usa">Slovenia </option>
+        <option value="usa">Russia</option>
+        <option value="usa">Hungary</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>

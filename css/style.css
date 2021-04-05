@@ -1,1 +1,102 @@
 /* Denna fil skall innehålla din CSS kod */
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+
+.container
+{
+    margin: 0px auto;
+    width: 1200px;
+}
+
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header-wrapper
+{
+    overflow: hidden;
+    padding: 5em 0em;
+    background: #c5c1c1 repeat;
+}
+
+#header
+{
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo
+{
+    padding: 5em 0em;
+    text-align: center;
+}
+
+#logo h1
+{
+    font-size: 3.5em;
+}
+
+#logo a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+#menu
+{
+    width: 80%;
+    margin: 0px auto;
+}
+
+#menu ul
+{
+    text-align: center;
+}
+
+#menu li
+{
+    display: inline-block;
+}
+
+#menu li a, #menu li span
+{
+    display: inline-block;
+    margin-left: 1.5em;
+    padding: 1.5em 1.5em;
+    letter-spacing: 0.20em;
+    text-decoration: none;
+    font-size: 0.90em;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: 0;
+    color: rgb(0, 0, 0);
+}
+
+  
+
+
+
+
