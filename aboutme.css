@@ -1,0 +1,25 @@
+h1{
+
+text-align: center;
+background-color: rgb(255, 255, 255);
+
+}
+  .text {
+
+    text-align: center;
+  }
+
+  img {
+align-items: flex-start;
+    align-items: center;
+  }
+
+  body {
+    background-color: rgb(165, 163, 163);
+    color:rgb(255, 255, 255);
+  }
+  
+  h1 {
+    background-color: rgb(214, 211, 211);
+    color: white;
+  }
