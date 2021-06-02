@@ -1,26 +1,19 @@
 /* Denna fil skall innehålla din CSS kod */
+
 html, body
 {
     height: 100%;
 }
 
-body
-{
-    margin: 0px;
-    padding: 0px;
-    background: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12pt;
-    font-weight: 400;
-    color: #000000;
-}
+
+
 
 
 
 .container
 {
     margin: 0px auto;
-    width: 1200px;
+    width: 100vw;
 }
 
 
@@ -99,3 +92,21 @@ font-family: initial;
 
 
 
+  img {
+
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+max-width: 25%;
+max-height: 25%;
+
+
+}
+
+  
